@@ -2,6 +2,16 @@ import streamlit as st
 
 st.title('🎈 FAQ: How to prevent app reruns')
 
+
+#############################################
+# 1. Use st.form
+with st.form(key='my_form'):
+   text_input = st.text_input(label='Enter some text')
+   submit_button = st.form_submit_button(label='Submit')
+
+st.write(text_input)
+
+
 #############################################
 # 2.1 Session state
 st.header('Session state')
@@ -21,4 +31,4 @@ if st.button('Decrement'):
 st.write('Count = ', st.session_state.count)
 
 #############################################
-
+# 2.2 Callback functions
