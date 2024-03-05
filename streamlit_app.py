@@ -5,6 +5,8 @@ st.title('🎈 FAQ: How to prevent app reruns')
 
 #############################################
 # 1. Use st.form
+st.header('st.form')
+
 with st.form(key='my_form'):
    text_input = st.text_input(label='Enter some text')
    submit_button = st.form_submit_button(label='Submit')
