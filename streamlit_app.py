@@ -27,10 +27,10 @@ if 'count' not in st.session_state:
    st.session_state.count = 0
 
 # Update session state variables
-if st.button('Increment', key='increment_btn'):
+if st.button('Increment'):
    st.session_state.count += 1
 
-if st.button('Decrement', key='decrement_btn'):
+if st.button('Decrement'):
    st.session_state.count -= 1
 
 # Print session state variable
@@ -51,7 +51,7 @@ def increment_counter():
 def decrement_counter():
     st.session_state.count_value -= 1
    
-st.button('Increment', on_click=increment_counter)
-st.button('Decrement', on_click=decrement_counter)
+st.button('Increment', on_click=increment_counter, key='increment_btn')
+st.button('Decrement', on_click=decrement_counter, key='decrement_btn')
 
 st.write('Count = ', st.session_state.count_value)
