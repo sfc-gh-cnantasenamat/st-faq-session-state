@@ -30,19 +30,22 @@ if st.button('Decrement'):
    st.session_state.count -= 1
 
 # Print session state variable
-st.write('Count: ', st.session_state.count)
+st.write('Count = ', st.session_state.count)
 
 #############################################
 # 2.2 Callback functions
 st.header('Callback functions')
 
+if 'count_value' not in st.session_state:
+    st.session_state.count_value = 0
 
-if 'squared' not in st.session_state:
-   st.session_state.squared = 0
+def increment_counter():
+    st.session_state.count_value += 1
+   
+def decrement_counter():
+    st.session_state.count_value -= 1
+   
+st.button('Increment', on_click=increment_counter)
+st.button('Decrement', on_click=decrement_counter)
 
-def callback():
-   st.session_state.squared = x * 2
-
-x = st.slider('Selct a value for **x**:', 1, 9, 1, on_change=callback)
-
-st.write('Squared: ', st.session_state.squared)
+st.write('Count = ', st.session_state.count_value)
