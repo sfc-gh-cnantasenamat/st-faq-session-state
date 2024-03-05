@@ -18,7 +18,7 @@ st.write(text_input)
 # 2.1 Session state
 st.header('Session state')
 
-A counter example using session state.
+st.write('A counter example using session state.')
 
 # Initialize session state variables
 if 'count' not in st.session_state:
@@ -38,7 +38,7 @@ st.write('Count = ', st.session_state.count)
 # 2.2 Callback functions
 st.header('Callback functions')
 
-A counter example using session state and callback functions.
+st.write('A counter example using session state and callback functions.')
 
 if 'count_value' not in st.session_state:
     st.session_state.count_value = 0
