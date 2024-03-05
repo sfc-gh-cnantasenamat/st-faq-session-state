@@ -7,7 +7,7 @@ st.title('🎈 FAQ: How to prevent app reruns')
 # 1. Use st.form
 st.header('st.form')
 
-st.write('Using `st.form` to prevent app rerun upon widget interaction; to perform app rerun the submit button needs to be explicitly clicked on.')
+st.write('Using `st.form` to prevent app rerun upon widget interaction; however, to process the widget, the submit button needs to be explicitly clicked on.')
 
 with st.form(key='my_form'):
    text_input = st.text_input(label='Enter some text')
