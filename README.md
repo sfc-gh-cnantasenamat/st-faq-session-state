@@ -1,9 +1,6 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 FAQ: How to prevent app reruns
 
-Description of the app ...
+Streamlit operates on a top-down execution model where every widget interaction triggers an app rerun. This occurs whenever user interacts with widget elements such as filling out text/number input box, adjusting values in a slider widget, selecting values in select boxes, etc.
 
 ## Demo App
 
@@ -12,14 +9,3 @@ Description of the app ...
 ## GitHub Codespaces
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
-
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
