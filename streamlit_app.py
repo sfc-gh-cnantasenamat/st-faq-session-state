@@ -7,7 +7,7 @@ st.title('🎈 FAQ: How to prevent app reruns')
 # 1. Use st.form
 st.header('st.form')
 
-st.write('Using `st.form` to prevent app rerun upon widget interaction; however, to process the widget, the submit button needs to be explicitly clicked on.')
+st.info('Using `st.form` to prevent app rerun upon widget interaction; however, to process the widget, the submit button needs to be explicitly clicked on.')
 
 with st.form(key='my_form'):
    text_input = st.text_input(label='Enter some text')
@@ -20,7 +20,7 @@ st.write(text_input)
 # 2.1 Session state
 st.header('Session state')
 
-st.write('A counter example using session state.')
+st.info('A counter example using session state.')
 
 # Initialize session state variables
 if 'count' not in st.session_state:
@@ -40,7 +40,7 @@ st.write('Count = ', st.session_state.count)
 # 2.2 Callback functions
 st.header('Callback functions')
 
-st.write('A counter example using session state and callback functions.')
+st.info('A counter example using session state and callback functions.')
 
 if 'count_value' not in st.session_state:
     st.session_state.count_value = 0
