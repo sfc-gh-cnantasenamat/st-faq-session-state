@@ -23,10 +23,10 @@ if 'count' not in st.session_state:
    st.session_state.count = 0
 
 # Update session state variables
-if st.button('Increment'):
+if st.button('Increment', key='increment_btn'):
    st.session_state.count += 1
 
-if st.button('Decrement'):
+if st.button('Decrement', key='decrement_btn'):
    st.session_state.count -= 1
 
 # Print session state variable
